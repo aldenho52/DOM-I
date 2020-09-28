@@ -55,4 +55,65 @@ link5.textContent = siteContent['nav']['nav-item-5']
 let link6 = document.querySelector('a:nth-of-type(6)')
 link6.textContent = siteContent['nav']['nav-item-6']
 
+// CTA Section
+const cta = document.querySelector('.cta')
+const h1 = cta.querySelector('h1')
+h1.textContent = siteContent['cta']['h1']
 
+const button = cta.querySelector('button')
+button.textContent = siteContent['cta']['button']
+
+const ctaImage = cta.querySelector('#cta-img')
+ctaImage.src = siteContent['cta']['img-src']
+
+// Main Content
+const topContent = document.querySelector('.top-content')
+
+const h4_1 = topContent.querySelector('.text-content h4')
+h4_1.textContent = siteContent['main-content']['features-h4']
+
+const textContent1 = topContent.querySelector('.text-content p')
+textContent1.textContent = siteContent['main-content']['features-content']
+
+const h4_2 = topContent.querySelector('.text-content:nth-child(2) h4')
+h4_2.textContent = siteContent['main-content']['about-h4']
+
+const textContent2 = topContent.querySelector('.text-content:nth-child(2) p')
+textContent2.textContent = siteContent['main-content']['about-content']
+
+const middleImg = document.querySelector('#middle-img')
+middleImg.src = siteContent['main-content']['middle-img-src']
+
+const bottomContent = document.querySelector('.bottom-content')
+
+const servicesH4 = bottomContent.querySelector('.text-content h4')
+servicesH4.textContent = siteContent['main-content']['services-h4']
+
+const servicesP = bottomContent.querySelector('.text-content p')
+servicesP.textContent = siteContent['main-content']['services-content']
+
+const product = bottomContent.querySelector('.text-content:nth-child(2) h4')
+product.textContent = siteContent['main-content']['product-h4']
+
+const productText = bottomContent.querySelector('.text-content:nth-child(2) p')
+productText.textContent = siteContent['main-content']['product-content']
+
+const vision = bottomContent.querySelector('.text-content:nth-child(3) h4')
+vision.textContent = siteContent['main-content']['vision-h4']
+
+const visionText = bottomContent.querySelector('.text-content:nth-child(3) p')
+visionText.textContent = siteContent['main-content']['vision-content']
+
+// Contact Section
+const contact = document.querySelector('.contact')
+
+const contactHeader = contact.querySelector('h4')
+contactHeader.textContent = siteContent['contact']['contact-h4']
+
+contact.querySelector('p:nth-of-type(1)').textContent = siteContent['contact']['address']
+contact.querySelector('p:nth-of-type(2)').textContent = siteContent['contact']['phone']
+contact.querySelector('p:nth-of-type(3)').textContent = siteContent['contact']['email']
+
+// Footer
+const footer = document.querySelector('footer')
+footer.querySelector('p').textContent = siteContent['footer']['copyright']
