@@ -41,4 +41,18 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// figuring things out
+// header
+let link1 = document.querySelector('a:nth-of-type(1)')
+link1.textContent = siteContent['nav']['nav-item-1']
+let link2 = document.querySelector('a:nth-of-type(2)')
+link2.textContent = siteContent['nav']['nav-item-2']
+let link3 = document.querySelector('a:nth-of-type(3)')
+link3.textContent = siteContent['nav']['nav-item-3']
+let link4 = document.querySelector('a:nth-of-type(4)')
+link4.textContent = siteContent['nav']['nav-item-4']
+let link5 = document.querySelector('a:nth-of-type(5)')
+link5.textContent = siteContent['nav']['nav-item-5']
+let link6 = document.querySelector('a:nth-of-type(6)')
+link6.textContent = siteContent['nav']['nav-item-6']
+
+
