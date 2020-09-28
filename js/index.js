@@ -55,10 +55,30 @@ link5.textContent = siteContent['nav']['nav-item-5']
 let link6 = document.querySelector('a:nth-of-type(6)')
 link6.textContent = siteContent['nav']['nav-item-6']
 
+const navBar = document.querySelector('nav')
+
+const search = document.createElement('a')
+search.textContent = 'Search'
+navBar.appendChild(search)
+
+const home = document.createElement('a')
+home.textContent = 'Home'
+navBar.prepend(home)
+
 // CTA Section
 const cta = document.querySelector('.cta')
-const h1 = cta.querySelector('h1')
-h1.textContent = siteContent['cta']['h1']
+
+let h1 = document.querySelector("h1")
+let br1 = document.createElement("br")
+let br2 = document.createElement("br")
+let h1text1 = document.createTextNode("DOM")
+let h1text2 = document.createTextNode("IS")
+let h1text3 = document.createTextNode("Awesome")
+h1.appendChild(h1text1)
+h1.appendChild(br1)
+h1.appendChild(h1text2)
+h1.appendChild(br2)
+h1.appendChild(h1text3)
 
 const button = cta.querySelector('button')
 button.textContent = siteContent['cta']['button']
@@ -110,10 +130,25 @@ const contact = document.querySelector('.contact')
 const contactHeader = contact.querySelector('h4')
 contactHeader.textContent = siteContent['contact']['contact-h4']
 
-contact.querySelector('p:nth-of-type(1)').textContent = siteContent['contact']['address']
+// contact.querySelector('p:nth-of-type(1)').textContent = siteContent['contact']['address']
 contact.querySelector('p:nth-of-type(2)').textContent = siteContent['contact']['phone']
 contact.querySelector('p:nth-of-type(3)').textContent = siteContent['contact']['email']
 
-// Footer
-const footer = document.querySelector('footer')
-footer.querySelector('p').textContent = siteContent['footer']['copyright']
+const address = contact.querySelector('p:nth-of-type(1)')
+
+footer1 = document.createTextNode('123 Way 456 Street')
+footer2 = document.createTextNode('Somewhere, USA')
+br3 = document.createElement('br')
+address.appendChild(footer1)
+address.appendChild(br3)
+address.appendChild(footer2)
+
+// // Footer
+const footer = document.querySelector('footer p')
+footer.textContent = siteContent['footer']['copyright']
+
+// // styling
+navLinks = document.querySelectorAll('a')
+navLinks.forEach( link => {
+  link.style.color = 'green'
+})
